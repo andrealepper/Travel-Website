@@ -5,3 +5,13 @@
 	border-bottom: 2px solid #F1C435;
 	
 }
+
+#navbar .nav-link {
+    font-size: 1.2em; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+    #navbar .nav-link {
+        font-size: .6em; /* Smaller font size for medium screens */
+    }
+}
