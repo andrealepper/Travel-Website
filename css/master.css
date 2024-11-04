@@ -15,3 +15,24 @@
         font-size: .6em; /* Smaller font size for medium screens */
     }
 }
+#copyright {
+	margin-top: 20px;
+	border-top: 2px solid #25A584;
+	
+}
+#copy {
+	margin-top: 2px;
+	
+}
+.bg-orange {
+	background-color: #F26E23;
+}
+.bg-teal {
+	background-color: #25A584;
+	
+	
+}
+.bg-yellow {
+	background-color: #F1C435;
+	
+}
