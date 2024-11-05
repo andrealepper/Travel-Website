@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
     #navbar .nav-link {
-        font-size: .6em; /* Smaller font size for medium screens */
+        font-size: .65em; /* Smaller font size for medium screens */
     }
 }
 #copyright {
