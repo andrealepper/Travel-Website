@@ -1,0 +1,40 @@
+
+
+.bg-orange{
+	
+	background-color:#F26E23;
+	
+}
+
+
+.bg-green{
+	
+	
+	background-color:#25A584;
+	
+	
+}
+
+
+.bg-yellow{
+	
+	
+	background-color:#F1C435;
+	
+}
+
+.py-5{
+	
+	 padding-top: ($spacer*3) ;
+  padding-bottom: ($spacer*3) ;
+	
+}
+
+.py-3{
+	
+	
+	padding-top: ($spacer) ;
+  padding-bottom: ($spacer);
+
+	
+}
