@@ -1,0 +1,56 @@
+Contact--->>
+
+#h1 {
+	font-size: 18pt;
+	color: #000000;
+	font-weight: normal;
+	font-family: monospace ;	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#phone {
+	float: left;
+
+	margin: 250px;
+	width: 90px;
+	height: 95px;
+}
+
+Location--->>
+
+#h2 {
+	font-size: 18pt;
+	color: #000000;
+	font-weight: normal;
+	font-family: monospace;
+	font: courier new;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#location {
+	float: left;
+	margin: 20px;
+	width: 90px;
+	height: 90px;
+}
+
+
+Hours--->>
+
+#h3 {
+	font-size: 24pt;
+	color: #000000;
+	font-family: monospace ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#clock {
+	float: left;
+	margin: 250px;
+	width: 90px;
+	height: 90px;
+}
+
