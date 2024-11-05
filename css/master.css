@@ -15,6 +15,11 @@
         font-size: .65em; /* Smaller font size for medium screens */
     }
 }
+@media (max-width: 380px) {
+    #navbar .nav-link {
+        font-size: .55em; /* Smaller font size for medium screens */
+    }
+}
 #copyright {
 	margin-top: 20px;
 	border-top: 2px solid #25A584;
