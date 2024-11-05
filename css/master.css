@@ -5,3 +5,39 @@
 	border-bottom: 2px solid #F1C435;
 	
 }
+
+#navbar .nav-link {
+    font-size: 1.2em; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+    #navbar .nav-link {
+        font-size: .65em; /* Smaller font size for medium screens */
+    }
+}
+@media (max-width: 380px) {
+    #navbar .nav-link {
+        font-size: .55em; /* Smaller font size for medium screens */
+    }
+}
+#copyright {
+	margin-top: 20px;
+	border-top: 2px solid #25A584;
+	
+}
+#copy {
+	margin-top: 2px;
+	
+}
+.bg-orange {
+	background-color: #F26E23;
+}
+.bg-teal {
+	background-color: #25A584;
+	
+	
+}
+.bg-yellow {
+	background-color: #F1C435;
+	
+}
