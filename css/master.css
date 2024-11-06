@@ -12,6 +12,11 @@
 
 @media (max-width: 768px) {
     #navbar .nav-link {
+        font-size: .9em; /* Smaller font size for medium screens */
+    }
+}
+@media (max-width: 500px) {
+    #navbar .nav-link {
         font-size: .65em; /* Smaller font size for medium screens */
     }
 }
@@ -39,5 +44,9 @@
 }
 .bg-yellow {
 	background-color: #F1C435;
+	
+}
+#text-orange {
+	color: #F26E23;
 	
 }
