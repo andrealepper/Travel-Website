@@ -10,9 +10,7 @@ Contact--->>
 }
 
 #phone {
-	float: left;
-
-	margin: 250px;
+	margin: 20px;
 	width: 90px;
 	height: 95px;
 }
@@ -30,12 +28,13 @@ Location--->>
 }
 
 #location {
-	float: left;
 	margin: 20px;
 	width: 90px;
 	height: 90px;
 }
 
+#building {
+	margin: 20px;
 
 Hours--->>
 
@@ -48,8 +47,7 @@ Hours--->>
 }
 
 #clock {
-	float: left;
-	margin: 250px;
+	margin: 20px;
 	width: 90px;
 	height: 90px;
 }
