@@ -94,11 +94,11 @@
 	</div>
 	
 	<div class="container">
-		<form>
+		<form class="needs-validation" novalidate>
 			<div class="mt-3">
 				<label for="FullName" class="form-label">Full name
 				</label>
-				<input type="text" class="form-control" id="FullName" placeholder="John Smith">
+				<input type="text" class="form-control" id="FullName" placeholder="John Smith" required>
 				<div class="invalid-feedback">
 				Please provide your full name. 
 				</div>
@@ -106,7 +106,7 @@
 			<div class="mt-3">
 				<label for="PhoneNumber" class="form-label">Phone Number
 				</label>
-				<input type="text" class="form-control" id="PhoneNumber" placeholder="111-222-3333">
+				<input type="text" class="form-control" id="PhoneNumber" placeholder="111-222-3333" required>
 				<div class="invalid-feedback">
 				Please provide your phone number. 
 				</div>
@@ -114,7 +114,7 @@
 			<div class="mt-3">
 				<label for="EmailAddress" class="form-label">Email Address
 				</label>
-				<input type="email" class="form-control" id="EmailAddress" placeholder="name@example.com">
+				<input type="email" class="form-control" id="EmailAddress" placeholder="name@example.com" required>
 				<div class="invalid-feedback">
 				Please provide your email address. 
 				</div>
@@ -122,7 +122,7 @@
 			<div class="mt-3">
 				<label for="Address" class="form-label">Address
 				</label>
-				<input type="text" class="form-control" id="PhoneNumber" placeholder="1234 1st st">
+				<input type="text" class="form-control" id="PhoneNumber" placeholder="1234 1st st" required>
 				<div class="invalid-feedback">
 				Please provide your address. 
 				</div>
@@ -130,7 +130,7 @@
 			<div class="mt-3">
 				<label for="City" class="form-label">City
 				</label>
-				<input type="text" class="form-control" id="City" placeholder="Quincy">
+				<input type="text" class="form-control" id="City" placeholder="Quincy" required>
 				<div class="invalid-feedback">
 				Please provide your city. 
 				</div>
@@ -138,7 +138,7 @@
 			<div class="mt-3">
 				<label for="State" class="form-label">State
 				</label>
-				<input type="text" class="form-control" id="State" placeholder="Illinois">
+				<input type="text" class="form-control" id="State" placeholder="Illinois" required>
 				<div class="invalid-feedback">
 				Please provide your state. 
 				</div>
@@ -146,7 +146,7 @@
 			<div class="mt-3">
 				<label for="Airport" class="form-label">What airport do you typically fly out of?
 				</label>
-				<input type="text" class="form-control" id="Airport" placeholder="St Louis International">
+				<input type="text" class="form-control" id="Airport" placeholder="St Louis International" required>
 				<div class="invalid-feedback">
 				Please provide your typical airport. 
 				</div>
@@ -154,7 +154,7 @@
 			<div class="mt-3">
 				<label for="Travel" class="form-label">Where do you want to travel or what climate are you looking for?
 				</label>
-				<input type="text" class="form-control" id="Travel" placeholder="tropical, Alaska, Europe, etc. ">
+				<input type="text" class="form-control" id="Travel" placeholder="tropical, Alaska, Europe, etc. " required>
 				<div class="invalid-feedback">
 				Please provide your ideal travel plans. 
 				</div>
@@ -162,7 +162,6 @@
 			<div class="col-12 mt-3">
 			<button class="btn btn-primary" type="submit">Submit form</button>
 		  </div>
-
 
 
 		</form>
@@ -185,4 +184,24 @@
 		</div>
 	</div>
 </body>
+
+<script>
+
+(() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </html>
